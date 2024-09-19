@@ -2,11 +2,9 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #3a0070, #00d2ff);
     color: #333;
-    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     overflow-x: hidden; /* Evita a rolagem lateral */
 }
 
@@ -19,10 +17,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;
-    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
+    margin: auto;
+    margin-top: 10%;
 }
 
 header {
@@ -113,8 +112,10 @@ button:hover {
 /* Responsividade */
 @media (max-width: 600px) {
     .history-container {
-        width: 450px;
+        width: 90vw;
         padding: 15px;
+        height: 80vh;
+        margin-top: 50%;
     }
 
     h1 {

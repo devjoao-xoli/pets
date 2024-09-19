@@ -20,7 +20,6 @@ body {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    height: 80vh;
 }
 
 header {
@@ -151,8 +150,13 @@ button:hover {
 /* Responsividade */
 @media (max-width: 600px) {
     .main-container {
-        width: 450px;
+        width: 90vw;
         padding: 15px;
+        height: 60vh;
+    }
+
+    .qr-container {
+        margin-top: 30px;
     }
 
     h2 {
