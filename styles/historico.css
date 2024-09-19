@@ -1,0 +1,142 @@
+body { 
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #3a0070, #00d2ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden; /* Evita a rolagem lateral */
+}
+
+.history-container {
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.icon-usu {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+
+h1 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.transaction {
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.transaction p {
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.btn-voltar {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-voltar:hover {
+    background-color: #46ffc1;
+    transition: .3s;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #6200ea;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 90px;
+}
+
+button img {
+    width: 40px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #46ffc1;
+    scale: 1.1;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .history-container {
+        width: 450px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .transaction {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 0.8em
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 0px 50px;
+    }
+}
