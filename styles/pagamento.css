@@ -12,8 +12,7 @@ body {
 
 .payment-container {
     flex: 1;
-    width: 100%;
-    max-width: 700px;
+    width: 90vw;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,7 +24,9 @@ body {
     align-items: center;
     height: auto; /* Ajuste automático da altura do container */
 }
-
+a{
+    width: 30px;
+}
 header {
     display: flex;
     align-items: center;
@@ -48,7 +49,7 @@ h1 {
 .payment-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Alinha o conteúdo à esquerda */
     width: 100%;
 }
 
@@ -79,18 +80,25 @@ h1 {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Aumenta o espaçamento entre os botões */
-    padding: 10px 0;
     margin-top: auto; /* Empurra o footer para a parte inferior */
+    width: 100%;
 }
 
 footer nav {
+width: 70%;
+margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Configuracao da biblioteca  */
+.app{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
+/* Configuracao da biblioteca /fim */
 button {
     background-color: #6200ea;
     border: none;
@@ -100,7 +108,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 90px;
 }
 
 button img {
@@ -112,14 +119,15 @@ button:hover {
     background-color: #46ffc1;
     scale: 1.1;
 }
-
+video{
+    margin-top: 90px;
+    width: 60vw;
+}
 /* Responsividade */
 @media (max-width: 600px) {
     .payment-container {
-        width: 450px; /* Ajusta a largura da .payment-container para telas pequenas */
         padding: 15px;
     }
-
     h1 {
         font-size: 20px;
     }
@@ -140,6 +148,6 @@ button:hover {
     button {
         width: 50px;
         height: 50px;
-        margin: 0px 50px;
+
     }
 }
