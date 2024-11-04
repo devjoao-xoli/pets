@@ -1,6 +1,6 @@
 body { 
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #3a0070, #00d2ff);
+background-image: url('../imagens/painel\ de\ fundo\ 2.jpg');
     color: #333;
     margin: 0;
     padding: 0;
@@ -12,9 +12,9 @@ body {
 
 .payment-container {
     flex: 1;
-    width: 90vw;
+    width: 92vw;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;
@@ -25,25 +25,40 @@ body {
     height: auto; /* Ajuste automático da altura do container */
 }
 a{
-    width: 30px;
+    width: 80px;
 }
 header {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    justify-content:center; /* Alinha o conteúdo à esquerda */
     margin-bottom: 20px;
+  
+}
+.icon{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon-usu {
     width: 55px;
     height: 55px;
-    margin-right: 10px;
+    margin-right: 7px;
+    background-color: #494949d2;
+    border-radius: 30px;
 }
-
+/*pagamento palavra*/
 h1 {
     color: #444;
-    margin: 0;
+    margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
 }
 
 .payment-info {
@@ -54,7 +69,7 @@ h1 {
 }
 
 .info-item {
-    background-color: #e0f7fa;
+    background-color: #ffd45f;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
@@ -64,7 +79,10 @@ h1 {
 
 .info-title {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 .info-content {
@@ -100,14 +118,16 @@ margin: auto;
 
 /* Configuracao da biblioteca /fim */
 button {
-    background-color: #6200ea;
+    background-color: #ffd904;
     border: none;
-    border-radius: 50%;
+    border-radius: 70%;
     cursor: pointer;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80px;
+    height: 80px;
 }
 
 button img {
@@ -116,12 +136,15 @@ button img {
 }
 
 button:hover {
-    background-color: #46ffc1;
-    scale: 1.1;
+    background-color: #ffb730e0;
+    scale: 1.2;
+    transition: 1.4s;
 }
 video{
     margin-top: 90px;
-    width: 60vw;
+    width: 30vw;
+    border-radius: 20px;
+
 }
 /* Responsividade */
 @media (max-width: 600px) {

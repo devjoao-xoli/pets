@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../imagens/painel\ de\ fundo\ 2.jpg');
+    background-size: cover;
 }
 
 .login-wrapper {
@@ -19,19 +21,20 @@ body {
 }
 
 .login-container {
-    width: 100%;
+    width: 50%;
     max-width: 400px;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    height: 80vh;
+    text-align:center;
+    height: 70vh;
 }
 
 .logo {
-    width: 100px;
-    margin-bottom: 20px;
+    width:160px;
+    margin-bottom: 3rem;
+    transition: 1.2s;
 }
 
 h1 {
@@ -64,37 +67,46 @@ input {
 #h-login{
     justify-content: center;
     display: flex;
-    gap: 5px;
+    gap: 4px;
 }
 button {
     padding: 7px;
-    background-color: #6200ea;
-    color: #dcfbff;
+    background-color:  hsl(46, 97%, 46%);
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    width: 250px;
+    font-size: 1.2rem;
+    width: 67%;
     margin: auto;
+    font-weight: 600;
+   
 }
 
 button:hover {
-    background-color: #46ffc1;
-    transition: .3s;
+    background-color: #ffdb77ef;
+    transition: 1.4s;
+    color: #ffffff;
+    
 }
 
 p {
-    margin: 20px 0;
-    font-size: 14px;
+    text-align: center;
+    margin: 40px 0;
+    font-size: .95rem;
 }
 
 a {
-    color: #6200ea;
+    color: #ffbe32;
     text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration:none;
+    color:#80631379;
 }
 
 .icon {
@@ -106,11 +118,11 @@ a:hover {
 /* Responsividade */
 @media (max-width: 600px) {
     .login-container {
-        padding: 15px;
+        padding: 34px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     input, button {

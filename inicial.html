@@ -3,27 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PET's - Página Inicial</title>
+    <title>PET'S - Página Inicial</title>
     <link rel="stylesheet" href="styles/inicial.css">
+    <link rel="shortcut icon" href="imagens/icone site icon.ico" type="image/x-icon">
     <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
 </head>
+
 <body>
+  
     <div class="main-container">
         <header>
-            <img src="imagens/do-utilizador.png" class="icon-usu" alt="Ícone Usuário">
-            <h2>Olá, Marcos Aurélio!</h2>
+               <!---QUEBRA DE LINHAAAA-->
+              
+            <div class="login-container">
+            <div id="h-login">
+        
+            </div>
+            </div>
+           <!---QUEBRA DE LINHAAAA-->
+           
+           
+        <header><img src="imagens/logo nome site.png" width="200"></header>
+        </span>
+        
+       
         </header>
+       
+        <!---QUEBRA DE LINHAAAA-->
+       
         <section class="account-info">
             <div class="container">
                 <div class="column">
+                    <header><img src="imagens/icone amarelo.png" class="icon-usu" alt="Ícone Usuário">
+                        <h1>Olá, Marcos Aurélio!</h1></header>
+                       
                     <div class="balance-container">
+                        
                         <div class="balance">
                             <p>Saldo: R$ **,**</p>
                         </div>
                         <img src="imagens/olho.png" width="30px" height="30px" alt="Visualizar Saldo">
                     </div>
+                    
                     <div class="actions">
                         <a href="pagamento.html">Pagamento</a>
+                       
                         <div class="qr-container">
                             <button class="qr-button" id="start-qr-button">
                                <a href="./pagamento.html"> <img src="imagens/varredura.png" alt="QR Code" class="icon-qr"></a>
@@ -35,6 +59,8 @@
                 </div>
             </div>            
         </section>
+        
+           <!---QUEBRA DE LINHAAAA-->
         <footer>
             <nav>
                 <a href="inicial.html"><button><img src="imagens/botao-de-inicio.png" class="icon" alt="Home"></button></a>
@@ -44,6 +70,7 @@
         </footer>
     </div>
 </body>
+   <!---QUEBRA DE LINHAAAA-->
 <script>
     document.getElementById('start-qr-button').addEventListener('click', function() {
         let qrCodeReader = new Html5Qrcode("qr-reader");
