@@ -1,7 +1,8 @@
-const EventEmitter = require('events');
-const ZXing = require('./zxing')();
-const Visibility = require('visibilityjs');
-const StateMachine = require('fsm-as-promised');
+// import EventEmitter from 'events';
+
+// import ZXing from '/pets-main/script/instascan-master/src/zxing.js';  // Certifique-se de que zxing.js é um módulo ES6 ou exportado corretamente.
+// import Visibility from '/pets-main/script/instascan-master/src/visibilityjs';
+// import StateMachine from '/pets-main/script/instascan-master/src/fsm-as-promised';
 
 class ScanProvider {
   constructor(emitter, analyzer, captureImage, scanPeriod, refractoryPeriod) {
