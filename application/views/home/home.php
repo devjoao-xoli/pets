@@ -46,11 +46,11 @@
                     </div>
                     
                     <div class="actions">
-                        <a href="pagamento.html">Pagamento</a>
+                        <a href="/pagamento">Pagamento</a>
                        
                         <div class="qr-container">
                             <button class="qr-button" id="start-qr-button">
-                               <a href="./pagamento.html"> <img src="/assets/imagens/varredura.png" alt="QR Code" class="icon-qr"></a>
+                               <a href="/pagamento"> <img src="/assets/imagens/varredura.png" alt="QR Code" class="icon-qr"></a>
                             </button>
                             <div id="qr-reader" style="width: 100%; height: 50%;"></div>
                             <p id="qr-result"></p>
