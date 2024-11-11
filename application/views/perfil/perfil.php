@@ -6,6 +6,14 @@
     <title>PET's - Meu Perfil</title>
     <link rel="shortcut icon" href="/assets/imagens/icone site icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/perfil.css">
+	<script src="/assets/script/jquery.min.js"></script>
+	<script src="/assets/script/qrcode.min.js"></script>
+	<style>
+		#qrcode {
+			display: flex;
+			justify-content: center;
+		}
+	</style>
 </head>
 <body>
     <div class="profile-container">
@@ -17,24 +25,22 @@
         <div class="profile-info">
             <div class="info-item">
                 <p class="info-title">Email:</p>
-                <p class="info-content">usuario@exemplo.com</p>
+                <p class="info-content"><?php echo $pessoa->email; ?></p>
             </div>
             <div class="info-item">
                 <p class="info-title">Data de Abertura da Conta:</p>
-                <p class="info-content">01/01/2023</p>
+                <p class="info-content"><?php echo $conta->data_abertura; ?></p>
             </div>
             <div class="info-item">
                 <p class="info-title">Tipo de Conta:</p>
-                <p class="info-content">Aluno</p>
+                <p class="info-content"><?php echo $pessoa->tipo_conta; ?></p>
             </div>
             <section class="">
                 <div class="uuid-container">
                     <p><strong>Código UUID:</strong></p>
-                    <p class="uuid">123e4567-e89b-12d3-a456-426614174000</p>
+                    <p class="uuid"><?php echo $conta->uuid; ?></p>
                 </div>
-                     <!---o antigo não tinha alinhamento central , mas o de antes era esse daqqui!!
-                     <div class=".qr-code-container ">  -->
-                   <header><img src="/assets/imagens/qr.png" alt="QR Code" width="120"></header>
+				   <div id="qrcode"></div>
                 
             </section>
         </div>
@@ -46,5 +52,18 @@
             </nav>
         </footer>
     </div>
+
+<script>
+	var qrcode = new QRCode("qrcode", {
+    text: "<?php echo $conta->uuid; ?>",
+    width: 128,
+    height: 128,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+
+</script>
+
 </body>
 </html>

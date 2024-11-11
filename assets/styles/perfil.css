@@ -55,7 +55,7 @@ h1 {
 .profile-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; 
     text-align: left; /* Alinha o texto à esquerda */
     width: 100%;
 }
