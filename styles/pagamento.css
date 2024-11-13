@@ -1,0 +1,176 @@
+body { 
+    font-family: Arial, sans-serif;
+background-image: url('../imagens/painel\ de\ fundo\ 2.jpg');
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden; /* Evita a rolagem lateral */
+}
+
+.payment-container {
+    flex: 1;
+    width: 92vw;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Ajuste automático da altura do container */
+}
+a{
+    width: 80px;
+}
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:center; /* Alinha o conteúdo à esquerda */
+    margin-bottom: 20px;
+  
+}
+.icon{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-usu {
+    width: 55px;
+    height: 55px;
+    margin-right: 7px;
+    background-color: #494949d2;
+    border-radius: 30px;
+}
+/*pagamento palavra*/
+h1 {
+    color: #444;
+    margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.payment-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo à esquerda */
+    width: 100%;
+}
+
+.info-item {
+    background-color: #ffd45f;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.info-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.info-content {
+    margin: 0;
+}
+
+.input-value {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: auto; /* Empurra o footer para a parte inferior */
+    width: 100%;
+}
+
+footer nav {
+width: 70%;
+margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Configuracao da biblioteca  */
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Configuracao da biblioteca /fim */
+button {
+    background-color: #ffd904;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+button img {
+    width: 40px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #ffb730e0;
+    scale: 1.2;
+    transition: 1.4s;
+}
+video{
+    margin-top: 90px;
+    width: 30vw;
+    border-radius: 20px;
+
+}
+/* Responsividade */
+@media (max-width: 600px) {
+    .payment-container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    .info-title {
+        font-size: 14px;
+    }
+
+    .input-value {
+        font-size: 14px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+
+    }
+}
